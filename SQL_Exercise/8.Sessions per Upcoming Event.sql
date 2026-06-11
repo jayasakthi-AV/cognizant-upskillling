@@ -1,0 +1,6 @@
+select e.event_id , e.title , count(s.session_id) as session
+from events e
+left join sessions s on e.event_id = s.event_id
+where e.status = 'upcoming' 
+group by e.event_id
+;
