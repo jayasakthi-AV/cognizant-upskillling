@@ -1,0 +1,1 @@
+print("VS Code Python setup successful")
